@@ -5,7 +5,6 @@ fs.readFile('puzzle-input.txt', 'utf8', function (error, data) {
 
   const dataWithoutLineBreaks = data.split(/\n/);
   const arrayOfSums = [];
-  const maxSums = [];
   let temporaryArray = [];
 
   for (let index = 0; index < dataWithoutLineBreaks.length; index++) {
