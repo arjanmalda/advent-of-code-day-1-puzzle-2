@@ -25,7 +25,7 @@ fs.readFile('puzzle-input.txt', 'utf8', function (error, data) {
   findLargest3(arrayOfSums);
 });
 
-function findLargest3(sumArray) {
+function findLargest3(sumArray: number[]) {
   const sortedSumArray = sumArray.sort((a, b) => (a < b ? 1 : a > b ? -1 : 0));
   const sumOfLargest3 = sortedSumArray.slice(0, 3).reduce((a, b) => a + b, 0);
 
